@@ -1,0 +1,426 @@
+
+.bg-digital{
+	background-color: #242424;
+	color: #EBEFEB ;
+}
+.custom-link{
+	color: #EBEFEB;
+	text-decoration: none;
+}
+
+.sg-hero {
+  padding: 50px 15px; /* Adjusted padding for mobile */
+}
+
+.sg-hero-title {
+  font-size: 2.5rem;
+  color: #EBEFEB;
+  margin-bottom: 1rem;
+}
+
+.sg-hero-text {
+  font-size: 1.2rem;
+  color: #EBEBEB;
+}
+
+.sg-hero-img {
+  border-radius: 0.5rem;
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive for About Section */
+@media (max-width: 768px) {
+  .sg-hero-title {
+    font-size: 2rem;
+  }
+  .sg-hero-text {
+    font-size: 1rem;
+  }
+}
+
+.text-start h2,
+.text-end p {
+    color: #EBEFEB;
+    margin-bottom: 30px; /* Margin to space out elements */
+}
+
+/* Statistics Section */
+
+.service .stat-box {
+  padding: 30px;
+  background-color: #131313;
+  border: 1px solid #131313;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 0; /* Ensure space between boxes on mobile */
+}
+
+.service .stat-icon {
+  font-size: 40px;
+  font-weight: bold;
+  color: #013220;
+}
+
+/* Responsive for Statistics Section */
+@media (max-width: 768px) {
+  .service .stat-box {
+    margin-bottom: 20px;
+    padding: 20px; /* Adjust padding for mobile */
+  }
+  .service .stat-number {
+    font-size: 30px;
+  }
+}
+        
+/* General Styles */
+
+
+.text-white {
+    color: #fff;
+}
+
+h2, h5 {
+    font-weight: 600;
+}
+
+.expertise-card {
+    background-color: #131313;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 150px;
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styles */
+.expertise-icon {
+    font-size: 2rem;
+    color: #013220; /* Green color */
+    margin-bottom: 15px;
+    text-shadow: 
+        0 0 0 white, /* White outline effect */
+        0 0 0 white, /* Additional shadow to enhance outline */
+        1px 1px 0 white,
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white; /* Create the outline effect */
+}
+
+/* Card Title */
+.expertise-card h5 {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #e1e1e1;
+}
+
+/* Responsive Spacing */
+@media (max-width: 768px) {
+    .expertise-card {
+        padding: 15px;
+    }
+
+    .expertise-icon {
+        font-size: 1.5rem;
+    }
+
+    h2, h5 {
+        font-size: 1.25rem;
+    }
+}
+
+/*============== portfolio =================*/
+
+/* Set a fixed height for larger screens */
+@media (min-width: 992px) {
+    .portfolio {
+        width: 100%; /* Full width */
+        height: auto; /* Set height to auto for larger screens */
+    }
+}
+
+/* Set responsive height for smaller screens */
+@media (max-width: 991px) {
+    .portfolio {
+        height: auto; /* Let height be determined by content */
+    }
+}
+
+/* Styles for section heading */
+.section-heading {
+    font-weight: bold;
+    margin-bottom: 10px; /* Space below the heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+}
+
+/* Improve h3 style */
+h3 {
+    font-size: 2rem; /* Larger font size */
+    line-height: 1.2; /* Improved line height */
+}
+
+/* Span styles */
+h3 span {
+    color: #FFD700; /* Gold color for emphasis */
+    font-weight: bold; /* Bold text */
+}
+
+/* Ensure images maintain their aspect ratio */
+.img-fluid {
+    max-width: 100%;
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.img-fluid:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Ensure carousel items are responsive */
+.owl-carousel {
+    height: auto; /* Dynamic height for the carousel */
+}
+
+.owl-carousel .item {
+    display: flex; /* Center images within items */
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Set height to auto for dynamic sizing */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.owl-carousel .item:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Customize scrollbar appearance */
+.owl-carousel::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.owl-carousel::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar */
+    border-radius: 10px; /* Rounded corners for scrollbar */
+}
+
+.owl-carousel::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color on hover */
+}
+
+/* Optional: Add some spacing */
+.owl-theme .owl-dots {
+    margin-top: 20px; /* Space between carousel and dots */
+}
+/*=============================================*/
+.video-wrapper1 {
+    position: relative;
+    width: 100%; /* Ensure the wrapper takes full width */
+    overflow: hidden; /* Prevent overflow of child elements */
+    border-radius: 10px; /* Optional: Add rounded corners to the video wrapper */
+}
+
+.video-thumbnail {
+    position: relative;
+    cursor: pointer; /* Indicate clickable */
+    display: block; /* Ensure it's a block-level element */
+    border-radius: 10px; /* Match the wrapper's border radius */
+}
+
+.thumbnail-img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Match the wrapper's border radius */
+}
+
+.video-overlay {
+    position: absolute; /* Overlay on the thumbnail */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Sit on top */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.video-thumbnail:hover .video-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.play-button {
+    background: #fff;
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 80px; /* Size of the button */
+    height: 80px; /* Size of the button */
+    font-size: 36px; /* Size of the play icon */
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    z-index: 20; /* Ensure the button is above the overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center play icon inside the button */
+    transition: background 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+.play-button:hover {
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white on hover */
+    transform: scale(1.1); /* Grow effect on hover */
+}
+
+/*=============================================*/
+
+
+/* Center modal content */
+.modal-dialog {
+    margin: auto; /* Center the modal */
+    max-width: 90%; /* Limit the width */
+    width: auto; /* Allow the modal to resize */
+}
+
+/* Modal body styles */
+.modal-body {
+    position: relative; /* Positioning for close button */
+    padding: 0; /* Remove default padding */
+}
+
+/* Close button styles */
+.close {
+    position: absolute; /* Position the close button */
+    top: 15px; /* Space from the top */
+    right: 15px; /* Space from the right */
+    color: white; /* Close button color */
+    font-size: 30px; /* Close button size */
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Change to pointer for proper hover effect */
+    z-index: 20; /* Ensure it is above the modal content */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.close:hover {
+    color: #ff4081; /* Optional: Change color on hover */
+}
+
+
+/* Video player styles */
+.stat-video1 {
+    width: 100%; /* Full width for the video */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: shadow effect */
+}
+
+
+
+/* ====== Our Clients Section CSS ====== */
+#our-clients .section-title {
+    font-size: 32px;
+    color: #003366; /* Dark blue color for title */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.our-clients-carousel .client-item {
+    text-align: center;
+    background-color: #181818;
+    padding: 30px;
+    width: 200px; /* Set fixed width for 2:1 aspect ratio */
+    height: 100px; /* Set height to maintain 2:1 ratio */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.our-clients-carousel .client-item:hover {
+    transform: scale(1.05); /* Slight scale on hover for effect */
+}
+
+.our-clients-carousel .client-logo {
+    max-width: 80%; /* Adjust to fit within the client item */
+    height: auto; /* Maintain aspect ratio */
+    filter: grayscale(100%); /* Grayscale effect */
+    transition: filter 0.3s ease;
+}
+
+.our-clients-carousel .client-logo:hover {
+    filter: grayscale(0); /* Remove grayscale on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #our-clients .section-title {
+        font-size: 24px;
+    }
+
+    .our-clients-carousel .client-item {
+        width: 150px; /* Adjust width for smaller screens */
+        height: 75px; /* Adjust height for smaller screens */
+    }
+
+    .our-clients-carousel .client-logo {
+        max-width: 80px; /* Adjust logo size on smaller screens */
+    }
+}
+
+/*================== testimonials ====================*/
+
+
+.testimonials-section {
+    color: white;
+}
+
+.testimonials-section .testimonial-card {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.testimonials-section .testimonial-card .testimonial-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #adb5bd;
+}
+
+/* Style for the user image */
+.testimonials-section .testimonial-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Target the dots container */
+.owl-carousel-testimonials .owl-dots .owl-dot {
+    display: inline-block;
+    margin: 0 5px; /* Add space between dashes */
+}
+
+/* Customize each dot to look like a dash */
+.owl-carousel-testimonials .owl-dots .owl-dot span {
+    display: inline-block;
+    width: 30px;         /* Make the dot wider to look like a dash */
+    height: 4px;         /* Adjust height to make it look like a dash */
+    background-color: #fff; /* Set the color of the dash */
+    border-radius: 3px;  /* Rounding the edges slightly */
+    opacity: 0.5;        /* Set opacity for unselected dash */
+    transition: all 0.3s ease;
+}
+
+/* Active dot (dash) style */
+.owl-carousel-testimonials .owl-dots .owl-dot.active span {
+    opacity: 1;               /* Full opacity for the active dash */
+    background-color: #fff; /* Highlight color for the active dash */
+}

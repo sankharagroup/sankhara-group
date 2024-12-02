@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Rewrite if the URL is not a directory and not a file
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Rewrite all requests that don't have an extension to include .php
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

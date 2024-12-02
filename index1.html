@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sankhara Group | Website Under Construction</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo/sh-logo.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(135deg, #0b6623, #ffffff);
+        height: 100vh;
+        color: #0b6623;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.6);
+        z-index: 1;
+    }
+
+    .content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin: 20px 0;
+        color: #013220;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 40px;
+        color: #013220;
+    }
+
+    .countdown {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+
+    .countdown div {
+        background: rgba(11, 102, 35, 0.2);
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 24px;
+        color: #013220;
+    }
+
+    .subscribe-form {
+        margin-bottom: 30px;
+    }
+
+    .subscribe-form input {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #0b6623;
+        border-radius: 5px;
+        outline: none;
+        color: #013220;
+    }
+
+    .subscribe-form button {
+        padding: 10px 20px;
+        background-color: #013220;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .subscribe-form button:hover {
+        background-color: #013220;
+        opacity: 0.9;
+    }
+
+    .social-links {
+        margin-top: 20px;
+    }
+
+    .social-links a {
+        color: #013220;
+        font-size: 20px;
+        margin: 0 10px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+        color: #013220;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+        .countdown div {
+            font-size: 18px;
+            padding: 8px 15px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="overlay"></div>
+    
+    <div class="content">
+        <div class="logo">
+            <img src="assets/images/logo/sh-group-logo.png" alt="Company Logo">
+        </div>
+        <h1>Our Website is Coming Soon!</h1>
+        <p>We're working hard to give you the best experience. Stay tuned!</p>
+
+        <!-- Countdown Timer -->
+        <div class="countdown">
+            <div id="days">00</div>
+            <div id="hours">00</div>
+            <div id="minutes">00</div>
+            <div id="seconds">00</div>
+        </div>
+
+        <!-- Subscription Form -->
+        <div class="subscribe-form">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button onclick="subscribe()">Notify Me</button>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <!-- <a href="https://twitter.com/yourcompany" target="_blank">Twitter</a> -->
+            <a href="https://facebook.com/sankharadigital" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/sankharadigital/" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+    <!-- JavaScript for Countdown -->
+    <script>
+        const launchDate = new Date("Oct 31, 2024 00:00:00").getTime();
+
+        const countdown = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = launchDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.querySelector(".countdown").innerHTML = "We are live!";
+            }
+        }, 1000);
+
+        function subscribe() {
+            const email = document.getElementById("email").value;
+            if(email) {
+                const xhr = new XMLHttpRequest();
+                xhr.open("POST", "subscribe.php", true);
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                        alert(xhr.responseText);
+                    }
+                };
+                xhr.send("email=" + encodeURIComponent(email));
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        }
+    </script>
+
+</body>
+</html>
