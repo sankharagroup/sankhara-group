@@ -39,7 +39,7 @@
         <div class="hero-content">
             <p class="text-muted mt-2">"<u>Collaborate Effortlessly: Empower Your Group with Seamless Online Solutions</u>"</p>
             <h1 class="mt-3" style="font-weight: 600;">"We <span class="text-custom">SANKHARA Group</span>  is a community of innovators committed to delivering exceptional products and services that inspire creativity and drive sustainable growth."</h1>
-            <button class="btn btn-custom px-3 mt-2 mb-4">Lets Connect</button> 
+            <button class="btn btn-custom px-3 mt-2 mb-4">Lets Connects</button> 
         </div>
         <!-- <div class="hero-img">
             <img src="assets/images/hero/hero-home.png" class="img-fluid">
