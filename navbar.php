@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+<nav class="navbar navbar-expand-lg  header">
     <div class="container custom-container">
         <a class="navbar-brand" href="./">
             <img src="assets/images/logo/sh-group-logo1.png" alt="Sankhara Group" height="100"> <!-- Replace with your logo path -->
