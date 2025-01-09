@@ -1079,11 +1079,11 @@ height */
 }
 .sh-logo-fit {
     border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
     width: 60%;
     padding: 7px;
     margin-inline: auto;
-    background-color: ghostwhite;
+    /* background-color: ghostwhite; */
 }
 .sh-logo {
     animation: rotate 3s linear infinite;
