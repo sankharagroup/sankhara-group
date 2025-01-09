@@ -940,10 +940,11 @@ height */
     color: var(--dark-gray-color);
 }
 .testimonials-section .testimonial-card {
-    position: relative; /* Make card a positioned element for logo placement */
+    position: relative;
     border-radius: 12px;
     max-width: 400px;
     margin: 0 auto;
+    padding: 6px 6px 10px 20px;
 }
 .testimonials-section .testimonial-card .testimonial-text {
     font-size: 0.9rem;
@@ -998,40 +999,43 @@ height */
 }
 .our-clients-carousel .client-item {
     text-align: center;
-    background-color: #181818;
-    padding: 10px;
-    width: 200px; /* Set fixed width for 2:1 aspect ratio */
-    height: 100px; /* Set height to maintain 2:1 ratio */
+    width: 200px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
+    margin-inline: auto;
+    border-radius: 15px;
+    overflow: hidden;
 }
 .our-clients-carousel .client-item:hover {
-    transform: scale(1.05); /* Slight scale on hover for effect */
+    transform: scale(1.05); 
 }
 .our-clients-carousel .client-logo {
-    max-width: 100%; /* Adjust to fit within the client item */
-    height: auto; /* Maintain
-aspect ratio */
-    filter: grayscale(100%); /* Grayscale effect */
+    max-width: 100%; 
+    height: auto; 
+    /* filter: grayscale(100%);  */
     transition: filter 0.3s ease;
 }
 .our-clients-carousel .client-logo:hover {
-    filter: grayscale(0); /* Remove grayscale on hover */
-} /* Responsive adjustments */
+    /* filter: grayscale(0);  */
+} 
 @media (max-width: 768px) {
     #our-clients .section-title {
         font-size: 24px;
     }
     .our-clients-carousel .client-item {
-        width: 150px; /* Adjust width for smaller screens */
-        height: 75px; /* Adjust height for smaller screens */
+        width: 150px; 
+        height: 75px; 
     }
     .our-clients-carousel .client-logo {
-        max-width: 80px; /* Adjust logo size on smaller screens */
+        max-width: 85%; 
     }
-} /* second-developer-codes----------------- */
+    .sh-logo-fit {
+        width: 100% !important;
+    }
+} 
 .three-point-box-section {
     display: grid;
     grid-template-columns: 1.5fr 0.5fr 1.5fr;
@@ -1048,7 +1052,7 @@ aspect ratio */
     position: absolute;
     top: 50%;
     right: 110%;
-    content: "";
+    content: none;
     width: 100vh;
     height: 1px;
     border-bottom: 3px dotted #ddd;
@@ -1096,12 +1100,12 @@ aspect ratio */
 } /* testimonial-section-start */
 .testimonial-logo-fit {
     width: 100px;
-    background-color: #ffcc59;
+    /* background-color: #ffcc59; */
     padding: 5px 15px;
     border-radius: 6px;
     margin-bottom: 10px;
     margin-inline-start: auto;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
 }
 .testimonial-logo-fit img {
     width: 100%;
