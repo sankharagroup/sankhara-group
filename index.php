@@ -19,7 +19,13 @@
         <!-- Owl Carousel CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-        <link rel="stylesheet" href="assets/css/styles.css?v=0.1" />
+        <link rel="stylesheet" href="assets/css/styles.css?v=0.2" />
+        <!-- wow-css -->
+         <link rel="stylesheet" href="assets/css/animate.css">
+        <!-- aos-css -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- animate-css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZSDQ9R4PB"></script>
@@ -196,16 +202,16 @@
             <div class="container custom-container">
                 <div class="three-point-box-section">
                     <div class="three-point-box three-point-1 w-100" style="place-items: end;">
-                        <h1 class="succeed text-custom text-end py-4" style="font-size: 3rem; font-weight: 800;">SUCCEED</h1>
+                        <h1 class="succeed text-custom text-end py-4 wow slideInLeft" data-wow-duration="1s" style="font-size: 3rem; font-weight: 800;">STRATEGIZE</h1>
                     </div>
                     <div class="three-point-box three-point-2 w-100">
-                        <h1 class="strategize text-custom py-4" style="font-size: 3rem; font-weight: 800;">STRATEGIZE</h1>
+                        <h1 class="strategize text-custom py-4 wow slideInRight" data-wow-duration="1s"  style="font-size: 3rem; font-weight: 800;">SUSTAIN</h1>
                     </div>
                     <div class="three-point-box three-point-3 w-100" style="place-items: end;">
-                        <h1 class="sustain text-custom py-4 text-end" style="font-size: 3rem; font-weight: 800;">SUSTAIN</h1>
+                        <h1 class="sustain text-custom py-4 text-end wow slideInLeft" data-wow-duration="1s" style="font-size: 3rem; font-weight: 800;">SUCCEED</h1>
                     </div>
                     <div class="three-point-logo text-center w-100">
-                        <div class="sh-logo-fit">
+                        <div class="sh-logo-fit wow flipInY" data-wow-duration="1.5s">
                             <img src="assets/images/logo/group.png" class="img-fluid sh-logo" alt="Sankhara Group Logo" />
                         </div>
                     </div>
@@ -249,15 +255,15 @@
                     <div class="owl-carousel our-clients-carousel owl-theme">
                         <!-- Client Image 1 -->
                         <div class="client-item">
-                            <img src="assets/images/clients/Dentitia.png" alt="Dentitia" class="client-logo" loading="lazy" />
+                            <img src="assets/images/clients/sk.jpg" alt="Dentitia" class="client-logo" loading="lazy" />
                         </div>
                         <!-- Client Image 2 -->
                         <div class="client-item">
-                            <img src="assets/images/clients/Yasaswis.png" alt="Yasaswis" class="client-logo" loading="lazy" />
+                            <img src="assets/images/clients/dr.png" alt="Yasaswis" class="client-logo" loading="lazy" />
                         </div>
                         <!-- Client Image 3 -->
                         <div class="client-item">
-                            <img src="assets/images/clients/Sktechnosys.png" alt="S k Technosys" class="client-logo" loading="lazy" />
+                            <img src="assets/images/clients/den.png" alt="S k Technosys" class="client-logo" loading="lazy" />
                         </div>
                     </div>
                 </div>
@@ -478,6 +484,15 @@
         <!-- Owl Carousel JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <!-- aos-js -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+              new WOW().init();
+        </script>
+        <script>
+        AOS.init();
+        </script>
 
         <script>
             $(document).ready(function () {
@@ -624,7 +639,7 @@
                     responsiveClass: true,
                     responsive: {
                         0: { items: 2 },
-                        600: { items: 4 },
+                        600: { items: 3 },
                         1000: { items: 3 }, // Display 6 items on larger screens
                     },
                 });
